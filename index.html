@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      author="Obiajulu Chukwuebuka"
+    />
+    <title>Tip Calculator</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- JavaScript -->
+    <script src="./app.js" defer></script>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo-div">
+        <img src="./asssets/logo.svg" alt="logo of splitter" />
+      </div>
+    </header>
+    <main>
+      <div class="container flex">
+        <div class="flex-container">
+          <div class="bill-form-input margin-bottom">
+            <form action="" class="flex-column">
+              <label for="bill" class="text-titlecase fs-title">bill</label>
+              <div class="input-field">
+                <img src="./asssets/icon-dollar.svg" alt="" class="icon">
+                <input
+                  type="number"
+                  name="bill"
+                  class="billInput input-padding"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="tip-input margin-bottom">
+            <h3 class="text-titlecase fs-title">select tip %</h3>
+            <div class="tip-percentages grid-3">
+              <button class="tip-select">5</button>
+              <button class="tip-select">10</button>
+              <button class="tip-select">15</button>
+              <button class="tip-select">25</button>
+              <button class="tip-select">50</button>
+              <form action="" class="custom-tip">
+                <input
+                  type="number"
+                  name="custom-tip"
+                  id="custom-tip"
+                  placeholder="Custom"
+                />
+              </form>
+            </div>
+          </div>
+          <div class="number-of-people">
+            <form action="" class="flex-column">
+              <label for="people" class="text-titlecase fs-title"
+                >number of people</label
+              >
+              <div class="input-field">
+                  <img src="./asssets/icon-person.svg" alt="" class="icon">
+                  <input
+                    type="number"
+                    name="people"
+                    id="people"
+                    class="input-padding"
+                  />
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Display calculator -->
+        <section class="display-bill">
+          <div class="right-side flex margin-btm-mobile">
+            <div class="display-info">
+              <h4 class="text-titlecase fs-title clr-white">tip amount</h4>
+              <small>/person</small>
+            </div>
+            <h2 class="tip-amount-figure fs-form-inputs">$45</h2>
+          </div>
+          <div class="right-side flex">
+            <div class="display-info">
+              <h4 class="text-titlecase fs-title clr-white">total</h4>
+              <small>/person</small>
+            </div>
+            <h2 class="total-figure fs-form-inputs">45</h2>
+          </div>
+          <button class="reset-btn">RESET</button>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
